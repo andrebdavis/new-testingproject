@@ -1,6 +1,7 @@
 package com.github.andrebdavis;
 import com.github.andrebdavis.Pages.LandingPage;
 import com.github.andrebdavis.Pages.LoginSignUpPage;
+import com.github.andrebdavis.Pages.MetaDataUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -29,17 +30,27 @@ public class AutoTest {
         //Click signUp/Log Link
         landingPage.clickSignUpLink();
 
-
-
         // Test URL location
         String actualURL = driver.getCurrentUrl();
 
         String expectedURL = "https://automationexercise.com/login";
         Assert.assertEquals(expectedURL, actualURL);
 
+        //Instantiating LoginsignUp Page
         final LoginSignUpPage loginSignUpPage = new LoginSignUpPage(driver);
 
         //click the name field
+        loginSignUpPage.nameClick();
+
+        //Create name for name field
+         String name = MetaDataUtility.createRandomName();
+
+         //Enter name into name Field
+        loginSignUpPage.EnterName(name);
+
+
+
+
 
 
     }

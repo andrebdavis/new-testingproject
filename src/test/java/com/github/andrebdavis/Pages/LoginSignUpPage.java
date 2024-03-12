@@ -18,5 +18,6 @@ public class LoginSignUpPage {
         WebElement nameField = driver.findElement(SignUpNameField);
         nameField.clear();
         nameField.sendKeys(name);
+
     }
 }
