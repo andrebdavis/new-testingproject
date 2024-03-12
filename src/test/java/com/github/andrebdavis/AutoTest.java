@@ -1,6 +1,8 @@
 package com.github.andrebdavis;
 import com.github.andrebdavis.Pages.LandingPage;
+import com.github.andrebdavis.Pages.LoginSignUpPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -27,8 +29,17 @@ public class AutoTest {
         //Click signUp/Log Link
         landingPage.clickSignUpLink();
 
+
+
         // Test URL location
         String actualURL = driver.getCurrentUrl();
+
+        String expectedURL = "https://automationexercise.com/login";
+        Assert.assertEquals(expectedURL, actualURL);
+
+        final LoginSignUpPage loginSignUpPage = new LoginSignUpPage(driver);
+
+        //click the name field
 
 
     }
