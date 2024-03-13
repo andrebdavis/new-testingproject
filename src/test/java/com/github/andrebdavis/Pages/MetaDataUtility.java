@@ -7,7 +7,7 @@ public class MetaDataUtility {
         return RandomStringUtils.randomAlphabetic(5);
     }
 
-    public static String createEmailAdress(){
+    public static String createEmailAddress(){
         return createRandomName()+"@gmail.com";
     }
 }

@@ -24,6 +24,10 @@ public class LoginSignUpPage {
     public void EmailClick(){
         driver.findElement(EmailAddressField).click();
         }
-
+    public void EnterEmail(String email){
+        WebElement EmailField = driver.findElement(EmailAddressField);
+        EmailField.clear();
+        EmailField.sendKeys(email);
+    }
     }
 

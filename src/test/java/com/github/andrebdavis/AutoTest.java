@@ -48,6 +48,20 @@ public class AutoTest {
          //Enter name into name Field
         loginSignUpPage.EnterName(name);
 
+        //click the email field
+        loginSignUpPage.EmailClick();
+
+        //Create email for email field
+        String email = MetaDataUtility.createEmailAddress();
+
+        //Enter email into email field
+        loginSignUpPage.EnterEmail(email);
+
+
+
+
+
+
 
 
 
