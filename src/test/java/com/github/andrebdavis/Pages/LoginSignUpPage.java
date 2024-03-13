@@ -8,6 +8,8 @@ public class LoginSignUpPage {
     private WebDriver driver;
 
     final private By SignUpNameField = By.cssSelector("input[data-qa*='signup-name']");
+    final private By EmailAddressField = By.cssSelector("input[data-qa*='signup-email']");
+
 
     public LoginSignUpPage(WebDriver driver){this.driver = driver;}
 
@@ -18,6 +20,10 @@ public class LoginSignUpPage {
         WebElement nameField = driver.findElement(SignUpNameField);
         nameField.clear();
         nameField.sendKeys(name);
+    }
+    public void EmailClick(){
+        driver.findElement(EmailAddressField).click();
+        }
 
     }
-}
+
