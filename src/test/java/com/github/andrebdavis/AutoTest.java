@@ -2,6 +2,7 @@ package com.github.andrebdavis;
 import com.github.andrebdavis.Pages.LandingPage;
 import com.github.andrebdavis.Pages.LoginSignUpPage;
 import com.github.andrebdavis.Pages.MetaDataUtility;
+import com.github.andrebdavis.Pages.SignUpPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -56,6 +57,9 @@ public class AutoTest {
 
         //Enter email into email field
         loginSignUpPage.EnterEmail(email);
+
+        //click signup button
+        loginSignUpPage.SignUpButtonClick();
 
 
 

@@ -13,6 +13,8 @@ public class LoginSignUpPage {
     final private By SignUpButtonField = By.cssSelector("button[data-qa*='signup-button']");
 
 
+
+
     public LoginSignUpPage(WebDriver driver){this.driver = driver;}
 
     public void nameClick(){
