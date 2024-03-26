@@ -1,4 +1,4 @@
-package org.example;
+package com.github.andrebdavis;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,16 +1,13 @@
 package com.github.andrebdavis;
+
 import com.github.andrebdavis.Pages.LandingPage;
 import com.github.andrebdavis.Pages.LoginSignUpPage;
 import com.github.andrebdavis.Pages.MetaDataUtility;
-import com.github.andrebdavis.Pages.SignUpPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-import org.junit.Test;
-
-import javax.swing.*;
 
 public class AutoTest {
     @Test
